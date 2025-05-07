@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './animations.css';
+
+:root {
+  --primary: #0047AB;
+  --secondary: #6B8E23;
+  --accent: #FF8C00;
+  --background: #F5F5F5;
+  --text: #202020;
+}
+
+/* Self Cast Studios Brand Styles */
+@layer base {
+  body {
+    @apply bg-selfcast-light text-selfcast-dark;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold;
+  }
+
+  h1 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  h2 {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+  }
+
+  h3 {
+    @apply text-xl md:text-2xl lg:text-3xl;
+  }
+
+  a {
+    @apply text-selfcast-primary hover:text-selfcast-accent transition-colors;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-selfcast-primary text-white px-6 py-2 rounded hover:bg-opacity-90 transition-all;
+  }
+
+  .btn-secondary {
+    @apply bg-selfcast-secondary text-white px-6 py-2 rounded hover:bg-opacity-90 transition-all;
+  }
+
+  .btn-accent {
+    @apply bg-selfcast-accent text-white px-6 py-2 rounded hover:bg-opacity-90 transition-all;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6;
+  }
+
+  .container-selfcast {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  /* Enhanced card styles */
+  .content-card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden hover-scale;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .content-card:hover {
+    @apply shadow-lg;
+  }
+  
+  /* Section styles */
+  .section {
+    @apply py-16;
+  }
+  
+  .section-title {
+    @apply text-3xl font-heading font-bold text-selfcast-dark mb-6;
+  }
+  
+  .section-subtitle {
+    @apply text-xl text-gray-600 mb-12;
+  }
+  
+  /* Enhanced link styles */
+  .link-with-arrow {
+    @apply inline-flex items-center text-selfcast-primary font-medium animated-underline;
+  }
+  
+  /* Form styles */
+  .form-input {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-selfcast-primary focus:border-transparent;
+  }
+  
+  .form-label {
+    @apply block text-sm font-medium text-gray-700 mb-1;
+  }
+  
+  .form-button {
+    @apply w-full bg-selfcast-primary text-white font-medium py-2 px-4 rounded-md hover:bg-selfcast-primary/90 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-selfcast-primary;
+  }
+}

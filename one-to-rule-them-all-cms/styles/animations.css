@@ -1,0 +1,148 @@
+/* Animation utilities for the Self Cast Studios client site */
+
+/* Fade-in up animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Animation delays */
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+
+.animation-delay-600 {
+  animation-delay: 600ms;
+}
+
+.animation-delay-900 {
+  animation-delay: 900ms;
+}
+
+/* Subtle hover animations */
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.03);
+}
+
+/* Button hover effects */
+.btn-hover-effect {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-hover-effect:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+  z-index: -1;
+}
+
+.btn-hover-effect:hover:after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Image hover zoom effect */
+.img-hover-zoom {
+  overflow: hidden;
+}
+
+.img-hover-zoom img {
+  transition: transform 0.5s ease;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.05);
+}
+
+/* Animated underline for links */
+.animated-underline {
+  position: relative;
+}
+
+.animated-underline:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-out;
+}
+
+.animated-underline:hover:after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Staggered animation for list items */
+.stagger-animate > * {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.stagger-animate > *:nth-child(1) {
+  animation: fadeInUp 0.5s ease-out 0.1s forwards;
+}
+
+.stagger-animate > *:nth-child(2) {
+  animation: fadeInUp 0.5s ease-out 0.2s forwards;
+}
+
+.stagger-animate > *:nth-child(3) {
+  animation: fadeInUp 0.5s ease-out 0.3s forwards;
+}
+
+.stagger-animate > *:nth-child(4) {
+  animation: fadeInUp 0.5s ease-out 0.4s forwards;
+}
+
+.stagger-animate > *:nth-child(5) {
+  animation: fadeInUp 0.5s ease-out 0.5s forwards;
+}
+
+.stagger-animate > *:nth-child(6) {
+  animation: fadeInUp 0.5s ease-out 0.6s forwards;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 71, 171, 0.4); /* selfcast-primary */
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 71, 171, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 71, 171, 0);
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
