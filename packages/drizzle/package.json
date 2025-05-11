@@ -59,9 +59,9 @@
     "uuid": "9.0.0"
   },
   "devDependencies": {
-    "@libsql/client": "0.14.0",
+    "@libsql/client": "0.15.5",
     "@payloadcms/eslint-config": "workspace:*",
-    "@types/pg": "8.10.2",
+    "@types/pg": "8.15.1",
     "@types/to-snake-case": "1.0.0",
     "payload": "workspace:*"
   },
