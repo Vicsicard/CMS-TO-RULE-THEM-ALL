@@ -121,12 +121,12 @@
     "uuid": "10.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.24.5",
-    "@babel/core": "^7.24.5",
-    "@babel/preset-env": "^7.24.5",
-    "@babel/preset-react": "^7.24.1",
-    "@babel/preset-typescript": "^7.24.1",
-    "@hyrious/esbuild-plugin-commonjs": "^0.2.4",
+    "@babel/cli": "^7.27.2",
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1",
+    "@babel/preset-typescript": "^7.27.1",
+    "@hyrious/esbuild-plugin-commonjs": "^0.2.5",
     "@payloadcms/eslint-config": "workspace:*",
     "@types/body-scroll-lock": "^3.1.0",
     "@types/react": "npm:types-react@19.0.0-rc.1",
@@ -134,7 +134,7 @@
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
     "@types/uuid": "10.0.0",
     "babel-plugin-react-compiler": "0.0.0-experimental-24ec0eb-20240918",
-    "esbuild": "0.23.1",
+    "esbuild": "0.25.4",
     "esbuild-sass-plugin": "3.3.1",
     "eslint-plugin-react-compiler": "19.0.0-beta-a7bf2bd-20241110",
     "payload": "workspace:*"
